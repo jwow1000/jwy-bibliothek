@@ -1,0 +1,92 @@
+#N canvas 290 319 900 521 10;
+#X obj 24 36 loadbang;
+#X text 173 77 Arg3: File Path to Sample Folder;
+#X obj 24 273 soundfiler;
+#X obj 24 89 symbol \$3;
+#X obj 24 57 t b b b, f 15;
+#X obj 24 304 t a b, f 21;
+#X obj 403 25 inlet;
+#X obj 403 118 openpanel;
+#X obj 403 439 pack s s;
+#X obj 403 379 t a b;
+#X msg 24 207 read -resize \$1/\$3.wav \$2;
+#X text 173 37 Arg1: Indvivdual Sample Number;
+#X text 173 57 Arg2: Sample Bank Name;
+#X obj 542 25 array define \$2-\$1;
+#X obj 448 413 symbol \$2-\$1;
+#X obj 55 131 symbol \$2-\$1;
+#X obj 24 170 pack s s \$1;
+#X obj 542 49 array define \$2-\$1-length;
+#X obj 24 361 tabwrite \$2-\$1-length;
+#X msg 147 331 0;
+#X msg 664 188 clear;
+#X obj 403 148 t a b a b, f 44;
+#X obj 420 198 symbol \$3;
+#X obj 420 219 pack s \$1;
+#X msg 420 256 write \$1/path\$2.txt;
+#X text 565 96 figure out some way to save the last path;
+#X obj 554 221 t a b;
+#X msg 581 244 0;
+#X obj 554 191 list fromsymbol;
+#X obj 664 323 text define -k \$0-text;
+#A set 47 85 115 101 114 115 47 106 101 114 101 109 121 119 105 108
+101 115 45 121 111 117 110 103 47 68 111 99 117 109 101 110 116 115
+47 77 117 115 105 99 47 83 97 109 112 108 101 32 80 97 99 107 115 47
+65 76 76 32 83 65 77 80 76 69 83 47 84 101 109 112 32 83 97 109 112
+108 101 115 47 66 105 103 46 70 105 115 104 46 65 117 100 105 111 46
+82 111 111 116 115 46 111 102 46 116 104 101 46 77 105 100 100 108
+101 46 69 97 115 116 46 38 46 78 111 114 116 104 46 65 102 114 105
+99 97 32 91 68 74 32 86 97 103 97 110 93 47 80 97 114 116 105 116 105
+111 110 32 67 47 77 65 75 83 79 85 77 78 85 87 65 82 47 77 78 85 87
+65 82 45 51 66 46 119 97 118 \;;
+#X msg 492 295 0;
+#X obj 492 345 list tosymbol;
+#X obj 492 324 text get \$0-text;
+#X obj 554 269 text set \$0-text;
+#X obj 757 211 symbol \$3;
+#X obj 757 232 pack s \$1;
+#X msg 757 263 read \$1/path\$2.txt;
+#X obj 730 173 t b b;
+#X msg 403 462 read -resize \$1 \$2;
+#X obj 403 62 route read;
+#X obj 730 135 r \$2-reload-all;
+#X connect 0 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 16 0;
+#X connect 4 0 3 0;
+#X connect 4 1 15 0;
+#X connect 5 0 18 0;
+#X connect 5 1 19 0;
+#X connect 6 0 39 0;
+#X connect 7 0 21 0;
+#X connect 8 0 38 0;
+#X connect 9 0 8 0;
+#X connect 9 1 14 0;
+#X connect 10 0 2 0;
+#X connect 14 0 8 1;
+#X connect 15 0 16 1;
+#X connect 16 0 10 0;
+#X connect 19 0 18 1;
+#X connect 20 0 29 0;
+#X connect 21 0 9 0;
+#X connect 21 1 22 0;
+#X connect 21 2 28 0;
+#X connect 21 3 20 0;
+#X connect 22 0 23 0;
+#X connect 23 0 24 0;
+#X connect 24 0 29 0;
+#X connect 26 0 33 0;
+#X connect 26 1 27 0;
+#X connect 27 0 33 1;
+#X connect 28 0 26 0;
+#X connect 30 0 32 0;
+#X connect 31 0 9 0;
+#X connect 32 0 31 0;
+#X connect 34 0 35 0;
+#X connect 35 0 36 0;
+#X connect 36 0 29 0;
+#X connect 37 0 30 0;
+#X connect 37 1 34 0;
+#X connect 38 0 2 0;
+#X connect 39 0 7 0;
+#X connect 40 0 37 0;
