@@ -1,4 +1,4 @@
-#N canvas 8 142 641 323 10;
+#N canvas 7 148 641 323 10;
 #X obj 39 243 *~;
 #X obj 253 260 *~;
 #X obj 39 288 dac~ 1 2, f 31;
@@ -11,7 +11,7 @@
 #X obj 38 218 *~;
 #X obj 56 195 r~ woof-vol;
 #X obj 458 14 inlet control;
-#N canvas 2 143 606 300 control 0;
+#N canvas 2 149 606 300 control 0;
 #X obj 15 9 inlet;
 #X obj 15 132 pow 2;
 #X obj 15 154 lop~ 5;

@@ -1,4 +1,4 @@
-#N canvas 588 198 586 388 10;
+#N canvas 178 213 586 388 10;
 #X obj 28 22 inlet midinote;
 #X obj 28 63 unpack, f 18;
 #X text 320 21 \$1 voice number;
