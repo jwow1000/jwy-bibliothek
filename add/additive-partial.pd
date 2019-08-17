@@ -1,4 +1,4 @@
-#N canvas 163 190 653 555 10;
+#N canvas 161 202 653 555 10;
 #X obj 41 210 +~, f 28;
 #X text 219 211 freq-lfo;
 #X obj 41 180 *~;
@@ -26,7 +26,7 @@
 #X connect 8 0 1 1;
 #X connect 9 0 2 1;
 #X restore 41 498 pd pan - - - - - - - -;
-#X obj 206 188 *~;
+#X obj 235 172 *~;
 #X text 471 148 \$1 partial number;
 #X text 473 170 \$2 voice number;
 #X text 476 189 \$3 synth number;
@@ -144,7 +144,7 @@
 #X obj 56 63 r~ \$3-add-transpose;
 #X obj 41 24 sig~;
 #X obj 41 117 mtof~;
-#N canvas 564 307 750 472 freq-envelope 0;
+#N canvas 216 273 750 472 freq-envelope 0;
 #X obj 117 340 outlet~;
 #X obj 117 193 phasor~;
 #X obj 117 295 cos~;
@@ -153,7 +153,7 @@
 #X obj 267 45 inlet re-start;
 #X obj 267 66 t b;
 #X obj 117 93 r \$3-add-\$1-fLFO-rate;
-#N canvas 454 175 450 300 clickless-phase-freq 0;
+#N canvas 453 181 450 300 clickless-phase-freq 0;
 #X obj 37 95 snapshot~;
 #X obj 37 34 inlet~;
 #X obj 143 35 inlet bang;
@@ -179,9 +179,9 @@
 #X connect 6 0 8 1;
 #X connect 7 0 1 0;
 #X connect 8 0 4 1;
-#X restore 206 136 pd freq-envelope;
+#X restore 235 120 pd freq-envelope;
 #X obj 386 18 r \$2-add-\$3-vel;
-#N canvas 269 168 750 472 amp-envelope 0;
+#N canvas 241 119 750 472 amp-envelope 0;
 #X obj 128 85 inlet velocity;
 #X obj 197 197 r \$3-add-\$1-r;
 #X obj 128 106 sel 0, f 44;
@@ -251,6 +251,8 @@
 #X obj 389 132 t b a b, f 17;
 #X obj 389 273 t a b b b, f 13;
 #X floatatom 203 287 5 0 0 0 - - -, f 5;
+#X obj 640 351 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
 #X connect 0 0 2 0;
 #X connect 1 0 12 0;
 #X connect 2 0 15 0;
@@ -274,7 +276,9 @@
 #X connect 18 0 16 0;
 #X connect 18 1 17 0;
 #X connect 19 0 6 0;
+#X connect 19 0 28 0;
 #X connect 20 0 6 0;
+#X connect 20 0 28 0;
 #X connect 21 0 13 0;
 #X connect 22 0 8 0;
 #X connect 23 0 4 1;
@@ -314,7 +318,7 @@
 #X obj 41 475 *~, f 11;
 #X obj 56 414 t a a;
 #X obj 473 64 t b b;
-#X obj 221 161 r \$3-add-\$1-fLFO-depth;
+#X obj 250 145 r \$3-add-\$1-fLFO-depth;
 #X connect 0 0 24 0;
 #X connect 2 0 0 0;
 #X connect 4 0 28 0;

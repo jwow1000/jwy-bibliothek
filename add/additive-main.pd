@@ -1,4 +1,4 @@
-#N canvas 99 269 598 383 10;
+#N canvas 382 259 598 383 10;
 #X obj 63 21 inlet note;
 #X obj 63 83 - 1;
 #X obj 63 104 pack 0 0 0, f 11;
@@ -212,7 +212,7 @@
 #X restore 273 147 pd master-adsr;
 #X text 112 236 number of partials;
 #X obj 81 183 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 11400 1;
 #X obj 78 210 / 127;
 #X obj 379 309 s \$1-hip-sharp;
 #X floatatom 426 249 5 0 0 0 - - -, f 5;
