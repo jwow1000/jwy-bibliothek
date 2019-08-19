@@ -1,4 +1,4 @@
-#N canvas 290 319 900 521 10;
+#N canvas 89 189 900 521 10;
 #X obj 24 36 loadbang;
 #X text 173 77 Arg3: File Path to Sample Folder;
 #X obj 24 273 soundfiler;
