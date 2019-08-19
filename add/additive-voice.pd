@@ -11,8 +11,10 @@
 #X obj 199 339 throw~ add-big-busR-\$2;
 #X text 323 57 \$3 partial number;
 #X obj 235 148 clone additive-partial \$3 \$1 \$2;
+#X msg 268 118 vis 4 1;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 1 1 5 0;
 #X connect 7 0 6 0;
 #X connect 8 0 9 0;
+#X connect 12 0 11 0;
