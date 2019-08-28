@@ -1,4 +1,4 @@
-#N canvas 157 271 804 406 10;
+#N canvas 156 277 804 406 10;
 #X obj 42 105 readsf~ 2, f 20;
 #X obj 41 132 *~ 0.7;
 #X obj 109 135 *~ 0.7;
@@ -11,11 +11,11 @@
 #X obj 92 20 t b b;
 #X msg 141 17 0;
 #X obj 237 38 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3600 1;
+-1 -1 0 1;
 #X obj 234 58 / 127;
 #X msg 236 99 master-vol \$1;
 #X obj 379 80 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6800 1;
+-1 -1 6400 1;
 #X obj 375 99 / 127;
 #X msg 377 140 tweet-vol \$1;
 #X msg 309 208 lo-x \$1;
@@ -152,6 +152,7 @@
 #X obj 42 345 cross-over-out 2500 4000 1 0.5;
 #X floatatom 580 153 5 0 0 0 - - -, f 5;
 #X obj 584 197 del 398;
+#X floatatom 294 142 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 1 0 30 0;
@@ -190,3 +191,5 @@
 #X connect 29 0 28 0;
 #X connect 31 0 32 1;
 #X connect 32 0 20 0;
+#X connect 33 0 17 0;
+#X connect 33 0 18 0;
