@@ -260,7 +260,7 @@
 #X obj 30 200 r \$1-load-presets;
 #X msg 30 228 0;
 #X obj 248 355 s add-\$1-waveform;
-#N canvas 2 280 1009 598 master-amp-adsr 0;
+#N canvas 15 139 1009 598 master-amp-adsr 0;
 #X obj 257 335 s \$1-add-att;
 #X obj 357 333 s \$1-add-dec;
 #X obj 450 334 s \$1-add-sus;
@@ -275,8 +275,8 @@
 #X obj 450 308 / 100;
 #X floatatom 554 280 5 0 0 0 - - -;
 #X obj 554 300 max 1;
-#X obj 318 130 r \$1-load-presets;
-#X msg 271 237 10;
+#X obj 344 65 r \$1-load-presets;
+#X msg 255 236 10;
 #X msg 362 222 300;
 #X msg 464 196 75;
 #X msg 560 244 500;
@@ -340,7 +340,7 @@
 #X restore 275 170 pd master-freq-adsr;
 #X obj 78 335 + 1;
 #X obj 568 28 inlet;
-#N canvas 0 50 450 300 messages 0;
+#N canvas 113 171 450 300 messages 0;
 #X obj 37 37 inlet;
 #X obj 37 83 s \$0-filt-freq;
 #X obj 181 94 s \$0-wave;
