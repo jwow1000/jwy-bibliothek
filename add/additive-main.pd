@@ -251,7 +251,7 @@
 #X obj 402 155 lop~ 5;
 #X text 112 236 number of partials;
 #X obj 80 183 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3800 1;
+-1 -1 0 1;
 #X obj 78 210 / 127;
 #X obj 379 309 s \$1-hip-sharp;
 #X floatatom 426 249 5 0 0 0 - - -;
