@@ -1,4 +1,4 @@
-#N canvas 378 331 573 406 10;
+#N canvas 0 23 732 569 10;
 #X obj 121 214 basic-sample samp 0;
 #X obj 121 147 list prepend note;
 #X obj 121 168 list trim;
