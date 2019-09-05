@@ -15,7 +15,7 @@
 #X obj 378 48 t b a, f 9;
 #X obj 542 50 t b a, f 12;
 #X obj 542 29 inlet textfile-write;
-#X text 171 59 Arg1: Path/Filename;
+#X text 428 284 Arg1: Path/Filename;
 #X obj 378 101 symbol \$1;
 #N canvas 108 199 637 521 read-than-wait 0;
 #X obj 209 127 text get \$0-txt;
@@ -75,7 +75,9 @@
 #X obj 207 307 route 69;
 #X msg 207 262 69;
 #X obj 106 283 t b a;
-#X obj 106 210 list split 3, f 28;
+#X text 373 304 Arg2: How many items in the list + first time argument
+;
+#X obj 106 210 list split \$2, f 28;
 #X connect 0 0 18 0;
 #X connect 3 0 11 0;
 #X connect 4 0 5 0;
@@ -93,12 +95,12 @@
 #X connect 14 1 11 1;
 #X connect 15 0 14 0;
 #X connect 17 0 9 0;
-#X connect 18 0 24 0;
+#X connect 18 0 25 0;
 #X connect 19 0 18 1;
 #X connect 20 0 21 0;
-#X connect 21 0 24 0;
+#X connect 21 0 25 0;
 #X connect 22 0 20 0;
 #X connect 23 0 22 0;
 #X connect 23 1 2 0;
-#X connect 24 0 23 0;
-#X connect 24 1 20 1;
+#X connect 25 0 23 0;
+#X connect 25 1 20 1;
