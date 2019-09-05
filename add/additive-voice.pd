@@ -3,7 +3,6 @@
 #X obj 28 63 unpack, f 18;
 #X text 320 21 \$1 voice number;
 #X text 323 40 \$2 synth number;
-#X obj 28 113 s \$1-add-\$2-midi;
 #X obj 133 88 s \$1-add-\$2-vel;
 #X obj 41 339 throw~ add-big-busL-\$2;
 #X obj 41 298 catch~ add-busL-\$1;
@@ -11,10 +10,13 @@
 #X obj 199 339 throw~ add-big-busR-\$2;
 #X text 323 57 \$3 partial number;
 #X obj 235 148 clone additive-partial \$3 \$1 \$2;
-#X msg 268 118 vis 4 1;
+#X msg 234 120 vis 4 1;
+#X obj 28 86 sig~;
+#X obj 28 143 s~ \$1-add-\$2-midi;
 #X connect 0 0 1 0;
-#X connect 1 0 4 0;
-#X connect 1 1 5 0;
-#X connect 7 0 6 0;
-#X connect 8 0 9 0;
-#X connect 12 0 11 0;
+#X connect 1 0 12 0;
+#X connect 1 1 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 11 0 10 0;
+#X connect 12 0 13 0;
