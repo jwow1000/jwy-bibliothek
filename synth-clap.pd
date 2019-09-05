@@ -1,0 +1,8 @@
+#N canvas 405 206 589 466 10;
+#X obj 148 263 vline~ 1;
+#X obj 148 284 pow~ 2;
+#X obj 63 155 noise~;
+#X obj 152 162 pack 0 0 0 0;
+#X obj 287 16 inlet time;
+#X obj 270 192 vcf~ 4;
+#X connect 0 0 1 0;
