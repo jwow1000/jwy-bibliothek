@@ -2,7 +2,7 @@
 #X obj 63 21 inlet note;
 #X obj 63 83 - 1;
 #X obj 63 104 pack 0 0 0, f 11;
-#N canvas 166 316 272 285 presets 1;
+#N canvas 166 316 272 285 presets 0;
 #N canvas 0 145 1030 614 envelop-presets 0;
 #X msg 214 488 \; \$3-add-\$2-a \$1;
 #X msg 374 463 \; \$3-add-\$2-d \$1;
