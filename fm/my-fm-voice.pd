@@ -1,0 +1,41 @@
+#N canvas 559 278 881 521 10;
+#X obj 23 6 inlet;
+#X obj 23 46 route note mess, f 37;
+#N canvas 139 380 528 401 yo-\$0 1;
+#X obj 20 30 presets/simple1 4473 0;
+#X obj 20 0 r note-4473;
+#X obj 100 0 r mess-4473;
+#X obj 20 200 throw~ L-presets/simple1;
+#X obj 140 180 throw~ R-presets/simple1;
+#X connect 0 0 3 0;
+#X connect 0 1 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X restore 45 162 pd yo-\$0;
+#X obj 404 45 loadbang;
+#X obj 431 122 symbol \$2;
+#X obj 23 83 s note-\$0;
+#X obj 132 86 s mess-\$0;
+#X obj 431 186 t l l;
+#X msg 458 216 \; pd-yo-\$2 clear;
+#X obj 404 66 t b b;
+#X obj 280 173 s \$0-loadbang;
+#X obj 374 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 431 165 pack s \$0 \$1;
+#X msg 431 248 \; pd-yo-\$2 obj 20 30 \$1 \$2 \$3 \; pd-yo-\$2 obj
+20 0 r note-\$2 \; pd-yo-\$2 obj 100 0 r mess-\$2 \; pd-yo-\$2 obj
+20 200 throw~ L-\$1 \; pd-yo-\$2 obj 140 180 throw~ R-\$1 \; pd-yo-\$2
+connect 1 0 0 0 \; pd-yo-\$2 connect 2 0 0 1 \; pd-yo-\$2 connect 0
+0 3 0 \; pd-yo-\$2 connect 0 1 4 0 \;;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 1 1 6 0;
+#X connect 3 0 9 0;
+#X connect 4 0 12 0;
+#X connect 7 0 13 0;
+#X connect 7 1 8 0;
+#X connect 9 0 10 0;
+#X connect 9 1 4 0;
+#X connect 11 0 9 0;
+#X connect 12 0 7 0;
