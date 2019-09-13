@@ -1,13 +1,13 @@
 #N canvas 250 290 635 507 10;
-#X obj 74 183 <;
-#X obj 74 205 sel 1;
+#X obj 69 183 <;
+#X obj 69 205 sel 1;
 #X obj 42 125 t f f;
-#X obj 109 238 + 1;
+#X obj 104 238 + 1;
 #X obj 42 327 +, f 5;
-#X obj 74 269 * 360;
+#X obj 69 269 * 360;
 #X obj 42 390 t f f;
-#X msg 224 291 0;
-#X obj 74 237 f 0;
+#X msg 224 302 0;
+#X obj 69 237 f 0;
 #X obj 42 19 inlet metro-360;
 #X obj 42 422 outlet looped-count;
 #X obj 245 19 inlet loop in beats;
@@ -18,10 +18,10 @@
 #X obj 224 260 sel 1;
 #X obj 224 237 >=, f 4;
 #X obj 470 27 inlet restart;
-#X obj 74 151 t f f b, f 12;
-#X obj 143 181 spigot 0;
-#X obj 143 203 t b b;
-#X msg 213 189 0;
+#X obj 69 151 t f f b, f 12;
+#X obj 138 181 spigot 0;
+#X obj 138 203 t b b;
+#X msg 208 189 0;
 #X obj 470 49 t b;
 #X msg 470 71 1;
 #X obj 245 156 - 1;
@@ -31,6 +31,8 @@
 #X obj 320 103 t f f;
 #X text 297 211 arg2: loop time in beats;
 #X text 298 192 arg1: tick number(this matches master ticks-arg);
+#X obj 276 384 outlet new measure;
+#X obj 224 281 t b b;
 #X connect 0 0 1 0;
 #X connect 1 0 8 0;
 #X connect 2 0 4 0;
@@ -50,7 +52,7 @@
 #X connect 13 0 12 0;
 #X connect 14 0 27 0;
 #X connect 15 0 6 0;
-#X connect 16 0 7 0;
+#X connect 16 0 33 0;
 #X connect 17 0 16 0;
 #X connect 18 0 23 0;
 #X connect 19 0 0 1;
@@ -69,3 +71,5 @@
 #X connect 28 0 29 0;
 #X connect 29 0 13 1;
 #X connect 29 1 5 1;
+#X connect 33 0 7 0;
+#X connect 33 1 32 0;
