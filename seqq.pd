@@ -37,8 +37,10 @@
 #X obj 182 285 ==, f 5;
 #X obj 209 196 i;
 #X obj 209 173 * \$1;
+#X msg 296 179 -1;
 #X connect 0 0 2 0;
 #X connect 0 1 1 0;
+#X connect 1 0 24 0;
 #X connect 2 0 23 0;
 #X connect 2 1 3 1;
 #X connect 3 0 5 0;
@@ -64,6 +66,7 @@
 #X connect 21 0 7 0;
 #X connect 22 0 18 0;
 #X connect 23 0 22 0;
+#X connect 24 0 18 0;
 #X restore 106 168 pd read-than-wait;
 #X obj 207 284 list, f 16;
 #X obj 207 307 route 69;
