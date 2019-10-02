@@ -1,5 +1,5 @@
 #N canvas 98 284 774 389 10;
-#X obj 39 16 inlet count;
+#X obj 106 20 inlet count;
 #X obj 378 295 text define \$0-txt;
 #X obj 133 317 outlet;
 #X obj 542 202 list prepend write;
