@@ -17,7 +17,7 @@
 #X obj 236 387 % 360, f 12;
 #X obj 290 224 i 0;
 #X obj 140 39 t a b;
-#X obj 290 148 r jwy-sync-pulse;
+#X obj 290 18 inlet;
 #X connect 0 0 1 0;
 #X connect 1 0 14 0;
 #X connect 2 0 3 0;
