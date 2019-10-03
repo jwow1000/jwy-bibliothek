@@ -72,7 +72,7 @@
 #X connect 26 0 16 0;
 #X connect 26 1 14 0;
 #X connect 26 2 25 1;
-#X restore 106 230 pd read-than-wait;
+#X restore 106 200 pd read-than-wait;
 #X msg 728 278 click;
 #X obj 205 85 inlet messages;
 #X obj 728 225 t b;
