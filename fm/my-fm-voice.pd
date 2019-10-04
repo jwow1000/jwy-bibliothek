@@ -2,11 +2,11 @@
 #X obj 23 6 inlet;
 #X obj 23 46 route note mess, f 37;
 #N canvas 139 380 528 401 yo-\$0 1;
-#X obj 20 30 presets/simple2 24090 0;
-#X obj 20 0 r note-24090;
-#X obj 100 0 r mess-24090;
-#X obj 20 200 throw~ L-presets/simple2-24089;
-#X obj 140 180 throw~ R-presets/simple2-24089;
+#X obj 20 30 presets/simple2 30653 0;
+#X obj 20 0 r note-30653;
+#X obj 100 0 r mess-30653;
+#X obj 20 200 throw~ L-presets/simple2-30652;
+#X obj 140 180 throw~ R-presets/simple2-30652;
 #X connect 0 0 3 0;
 #X connect 0 1 4 0;
 #X connect 1 0 0 0;
