@@ -18,6 +18,7 @@
 #X obj 290 224 i 0;
 #X obj 140 39 t a b;
 #X obj 290 18 inlet;
+#X obj 290 39 t b;
 #X connect 0 0 1 0;
 #X connect 1 0 14 0;
 #X connect 2 0 3 0;
@@ -37,4 +38,5 @@
 #X connect 16 0 2 0;
 #X connect 17 0 8 0;
 #X connect 17 1 10 0;
-#X connect 18 0 16 0;
+#X connect 18 0 19 0;
+#X connect 19 0 16 0;
