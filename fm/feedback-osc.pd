@@ -1,4 +1,4 @@
-#N canvas 846 307 558 398 10;
+#N canvas 405 221 558 398 10;
 #X obj 14 275 +~, f 15;
 #X obj 14 297 cos~;
 #X obj 14 379 outlet~;
