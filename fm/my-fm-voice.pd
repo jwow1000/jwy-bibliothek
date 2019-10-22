@@ -1,11 +1,11 @@
 #N canvas 559 278 881 521 10;
 #X obj 23 6 inlet;
 #N canvas 139 380 528 401 yo-\$0 1;
-#X obj 20 30 presets/simple1 45117 0;
-#X obj 20 0 r note-45117;
-#X obj 100 0 r mess-45117;
-#X obj 20 200 throw~ L-presets/simple1-26375;
-#X obj 140 180 throw~ R-presets/simple1-26375;
+#X obj 20 30 presets/simple1 48743 0;
+#X obj 20 0 r note-48743;
+#X obj 100 0 r mess-48743;
+#X obj 20 200 throw~ L-presets/simple1-48742;
+#X obj 140 180 throw~ R-presets/simple1-48742;
 #X connect 0 0 3 0;
 #X connect 0 1 4 0;
 #X connect 1 0 0 0;
