@@ -1,4 +1,4 @@
-#N canvas 426 235 850 531 10;
+#N canvas 212 220 850 531 10;
 #X obj 106 82 inlet count;
 #X obj 378 357 text define \$0-txt;
 #X obj 133 459 outlet;
@@ -95,7 +95,9 @@
 #X msg 284 354 0;
 #X obj 245 377 v \$0-gibt-es;
 #X obj 148 376 v \$0-gibt-es;
-#X obj 378 150 t b b b a;
+#X obj 344 147 t b b b a;
+#X text 397 47 *** need to chnage this behavior so the text buffer
+switches when a new equence is loaded to prevent dsp chokes.;
 #X connect 0 0 12 0;
 #X connect 3 0 4 0;
 #X connect 4 0 1 0;
