@@ -1,0 +1,27 @@
+#N canvas 0 23 450 300 12;
+#X obj 37 42 / 127;
+#X obj 37 88 i;
+#X obj 37 19 ctlin \$1 1;
+#X obj 157 23 ctlin \$1 2;
+#X obj 37 65 * \$2;
+#X text 273 46 Arg1: ctl #;
+#X text 273 66 Arg2: number range;
+#X obj 157 46 sel 127;
+#X obj 37 111 t a a;
+#X obj 37 138 i;
+#X obj 100 101 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-162280 -1 -4160 0 256;
+#X obj 101 134 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-257985 -1 -4160 0 256;
+#X obj 101 180 outlet;
+#X connect 0 0 4 0;
+#X connect 1 0 8 0;
+#X connect 2 0 0 0;
+#X connect 3 0 7 0;
+#X connect 4 0 1 0;
+#X connect 7 0 9 0;
+#X connect 8 0 9 1;
+#X connect 8 1 10 0;
+#X connect 9 0 11 0;
+#X connect 11 0 12 0;
+#X coords 0 -1 1 1 50 50 2 100 100;
