@@ -18,6 +18,9 @@
 #X msg 219 167 0;
 #X text 100 161 REC TIME;
 #X text 101 100 REC SWITCH;
+#X text 145 114 *save;
+#X text 151 128 as;
+#X text 145 144 .wav!;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 4 0;
