@@ -25,9 +25,9 @@
 #X obj 328 75 spigot 1;
 #X obj 328 98 t b b, f 17;
 #X msg 328 121 0;
-#X obj 418 173 text fromlist \$0-bpm;
-#X obj 418 145 list;
-#X msg 418 121 500 \\\; 500 \\\; 500 \\\; 500 \\\; 500 \\\; 500 \\\;
+#X obj 444 186 text fromlist \$0-bpm;
+#X obj 444 158 list;
+#X msg 444 134 500 \\\; 500 \\\; 500 \\\; 500 \\\; 500 \\\; 500 \\\;
 ;
 #X connect 0 0 22 0;
 #X connect 2 0 3 0;

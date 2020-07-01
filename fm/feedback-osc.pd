@@ -1,8 +1,8 @@
-#N canvas 405 221 558 398 10;
+#N canvas 405 221 791 535 10;
 #X obj 14 275 +~, f 15;
 #X obj 14 297 cos~;
-#X obj 14 379 outlet~;
-#X obj 34 324 tabsend~ \$0-fb;
+#X obj 14 419 outlet~;
+#X obj 25 324 tabsend~ \$0-fb;
 #X obj 101 164 *~;
 #X obj 444 215 table \$0-fb 1;
 #X obj 116 131 tabreceive~ \$0-fb;
@@ -18,8 +18,8 @@
 #X obj 223 11 inlet~ mod;
 #X obj 312 10 inlet~ amp;
 #X obj 14 358 *~, f 35;
-#X msg 389 129 1;
-#X obj 389 108 r \$1-loadbang;
+#X msg 444 162 1;
+#X obj 444 141 r \$1-loadbang;
 #X obj 444 193 switch~ 1 1 1;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
