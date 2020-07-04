@@ -110,7 +110,7 @@ file;
 #X restore 21 35 pd messes;
 #X text 225 56 Arg 2: textfile location/name;
 #X text 226 28 Arg1: unique name;
-#N canvas 363 111 450 300 receive 1;
+#N canvas 363 111 450 300 receive 0;
 #X obj 44 36 r aDdd-s;
 #X obj 44 59 list split 1;
 #X obj 85 115 max 0;

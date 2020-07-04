@@ -1,0 +1,12 @@
+#N canvas 355 217 450 300 12;
+#X obj 49 189 pdcontrol;
+#X msg 49 146 dir;
+#X obj 49 82 loadbang;
+#X obj 49 105 t b b b;
+#X obj 49 228 s jwy-glOb-path;
+#X obj 160 164 print ttre;
+#X connect 0 0 4 0;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
