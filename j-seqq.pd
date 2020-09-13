@@ -232,6 +232,7 @@ f 127;
 #X connect 12 0 11 1;
 #X connect 13 0 6 0;
 #X restore 1037 270 pd create-path;
+#X text 489 427 *** preview isnt working well;
 #X connect 0 0 1 0;
 #X connect 1 0 7 0;
 #X connect 2 0 19 0;

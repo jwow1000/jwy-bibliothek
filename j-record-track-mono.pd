@@ -20,6 +20,7 @@
 #X obj 438 295 pack s s 0;
 #X obj 191 479 writesf~ 1;
 #X msg 438 324 \$1-take\$3-\$2.wav;
+#X text 580 93 ***This works only with j-record-main;
 #X connect 1 0 0 0;
 #X connect 3 0 10 0;
 #X connect 4 0 7 0;

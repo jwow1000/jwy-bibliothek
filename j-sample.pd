@@ -1,0 +1,5 @@
+#N canvas 533 253 450 300 12;
+#X obj 298 10 inlet messages;
+#X obj 298 33 route;
+#X obj 11 13 inlet note-pairs;
+#X connect 0 0 1 0;
