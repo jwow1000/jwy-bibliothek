@@ -1,0 +1,14 @@
+#N canvas 115 384 868 494 12;
+#X text 40 34 Arg. 1: Unique name for samples;
+#X text 40 54 Arg. 2: Number of samples;
+#X obj 351 15 inlet messages;
+#N canvas 0 23 587 429 messages 0;
+#X obj 37 37 inlet;
+#X obj 37 60 route;
+#X connect 0 0 1 0;
+#X restore 351 42 pd messages;
+#X text 249 242 this loads the abstraction j-loader1 into the clone
+;
+#X text 33 7 Load mono audio files into tables;
+#X obj 50 241 clone -s 1 j-loader1 \$2 \$1;
+#X connect 2 0 3 0;
