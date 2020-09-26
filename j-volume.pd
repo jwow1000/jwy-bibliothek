@@ -2,23 +2,24 @@
 #X obj 326 12 inlet~;
 #X obj 506 28 / 127;
 #X obj 506 50 pow 2;
-#X obj 506 72 lop~ 5;
 #X obj 326 144 *~;
 #X obj 326 166 outlet~;
-#X obj 63 4 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 11 4 hsl 85 15 0 127 0 0 empty empty empty -2 -8 0 10 -253504
 -1 -1 0 1;
 #X obj 585 8 inlet 0-127;
 #X obj 392 14 inlet~;
 #X obj 392 146 *~;
 #X obj 392 168 outlet~;
-#X connect 0 0 4 0;
+#X obj 506 72 lop~ \$1;
+#X text 65 67 arg 1 = smoothness;
+#X connect 0 0 3 0;
 #X connect 1 0 2 0;
-#X connect 2 0 3 0;
-#X connect 3 0 4 1;
-#X connect 3 0 9 1;
-#X connect 4 0 5 0;
-#X connect 6 0 1 0;
-#X connect 7 0 6 0;
+#X connect 2 0 10 0;
+#X connect 3 0 4 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
 #X connect 8 0 9 0;
-#X connect 9 0 10 0;
-#X coords 0 -1 1 1 200 25 2 0 0;
+#X connect 10 0 3 1;
+#X connect 10 0 8 1;
+#X coords 0 -1 1 1 100 25 2 0 0;
