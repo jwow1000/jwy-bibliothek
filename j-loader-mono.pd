@@ -130,7 +130,7 @@
 #X connect 3 2 6 0;
 #X connect 6 0 1 0;
 #X restore 25 148 pd pick;
-#N canvas 495 54 635 537 the-array 1;
+#N canvas 495 54 635 537 the-array 0;
 #X obj 97 247 array define j-samp-\$2-\$1;
 #X obj 97 29 r load-2-table-\$0;
 #X obj 97 168 soundfiler;

@@ -11,13 +11,17 @@
 #X obj 236 336 - 1;
 #X obj 437 238 / \$1;
 #X obj 236 316 j-counter \$1;
+#X obj 453 62 t a a;
+#X obj 513 346 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 10 0;
 #X connect 2 0 8 0;
-#X connect 3 0 0 0;
+#X connect 3 0 12 0;
 #X connect 6 0 7 0;
 #X connect 7 0 11 2;
 #X connect 8 0 11 0;
 #X connect 9 0 4 0;
 #X connect 10 0 8 1;
 #X connect 11 0 9 0;
+#X connect 12 0 0 0;
+#X connect 12 1 13 0;
