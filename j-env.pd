@@ -707,6 +707,7 @@ the pow so that there is continuity and no click;
 #X obj 285 394 pack, f 7;
 #X obj 346 431 vline~;
 #X msg 350 393 \$1 0;
+#X obj 499 582 outlet bang when finished;
 #X connect 0 0 10 0;
 #X connect 0 1 27 0;
 #X connect 2 0 29 0;
