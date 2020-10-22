@@ -10,14 +10,18 @@
 #X obj 354 17 inlet bpm;
 #X obj 81 17 inlet bar(note)-division;
 #X text 124 72 relative bpm \, outputs ms;
+#X floatatom 354 183 5 0 0 0 - - -;
+#X floatatom 378 50 5 0 0 0 - - -;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 1 0 3 0;
 #X connect 2 0 1 0;
 #X connect 3 0 6 1;
+#X connect 3 0 11 0;
 #X connect 5 0 4 0;
 #X connect 6 0 5 0;
 #X connect 7 0 6 0;
 #X connect 7 1 5 1;
 #X connect 8 0 0 0;
 #X connect 9 0 7 0;
+#X connect 12 0 0 0;

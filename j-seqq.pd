@@ -1,6 +1,6 @@
 #N canvas 145 180 1295 639 12;
 #X obj 76 135 inlet count;
-#N canvas 337 251 637 556 read-than-wait 0;
+#N canvas 544 201 637 556 read-than-wait 1;
 #X obj 208 213 text get \$0-txt;
 #X obj 325 247 sel 2;
 #X obj 208 236 list split 1;
