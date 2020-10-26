@@ -1,4 +1,4 @@
-#N canvas 0 23 450 300 12;
+#N canvas 0 23 694 499 12;
 #X obj 37 37 inlet;
 #X obj 165 415 outlet;
 #X obj 181 175 unpack 0 0 0;
