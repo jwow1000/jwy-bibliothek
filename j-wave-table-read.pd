@@ -1,0 +1,11 @@
+#N canvas 550 306 750 440 12;
+#X obj 124 167 soundfiler;
+#X obj 124 59 loadbang;
+#X obj 124 81 f \$1;
+#X obj 245 12 inlet for-messages;
+#X obj 125 234 table j-wave-osc-\$1 1027;
+#X msg 124 138 read -resize j-waveforms/wave\$1.wav j-wave-osc-\$1
+;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 5 0 0 0;

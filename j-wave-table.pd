@@ -1,0 +1,6 @@
+#N canvas 521 362 450 300 12;
+#X obj 71 159 clone -s 1 19 j-wave-table-read;
+#X floatatom 113 58 5 0 0 0 - - -;
+#X msg 112 86 vis \$1 1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
