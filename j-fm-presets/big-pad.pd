@@ -90,8 +90,8 @@
 #X msg 522 221 new \, 0.9 8 2 \, 0.1 125 2 \, 0.86 250 2;
 #X obj 524 384 j-complex-env-block;
 #X obj 654 420 sel 0;
-#X msg 714 386 cont \, 0.25 125 4 \, 0.8 125 4 \, 0.1 125 4 \, 0.75
-125 4;
+#X msg 714 386 cont \, 0.25 250 4 \, 0.8 250 4 \, 0.1 500 4 \, 0.75
+500 4;
 #X connect 0 0 3 1;
 #X connect 1 0 11 0;
 #X connect 3 0 2 0;
@@ -154,7 +154,6 @@
 #X obj 302 182 r \$0-p3;
 #X msg 398 181 cont \, 0 1000 2;
 #X obj 198 407 j-fm-feedback-osc \$1 1400;
-#X obj 268 285 sig~ 3;
 #X msg 690 404 cont \, 0.25 125 2 \, 0.9 125 2 \, 0.25 125 2 \, 0.8
 250 4 \, 0.2 250 3 \, 0.78 250 3 \, 0.2 320 2 \, 0.75 320 4 \, 0.25
 320 4;
@@ -162,37 +161,38 @@
 #X msg 522 221 new \, 0.75 8 0.8 \, 0.1 1000 0.8 \, 0.86 250 2;
 #X obj 523 384 j-complex-env-block;
 #X obj 611 421 sel 0;
+#X obj 269 285 sig~ 4;
 #X connect 0 0 22 1;
 #X connect 1 0 8 0;
 #X connect 3 0 22 0;
 #X connect 4 0 9 0;
 #X connect 5 0 22 3;
-#X connect 6 0 24 0;
+#X connect 6 0 23 0;
 #X connect 8 0 11 0;
 #X connect 8 1 16 0;
-#X connect 9 0 27 0;
+#X connect 9 0 26 0;
 #X connect 10 0 9 1;
 #X connect 11 0 21 0;
 #X connect 11 1 12 0;
 #X connect 12 0 6 1;
 #X connect 14 0 6 1;
-#X connect 16 0 26 0;
+#X connect 16 0 25 0;
 #X connect 16 1 14 0;
-#X connect 16 2 25 0;
+#X connect 16 2 24 0;
 #X connect 17 0 22 4;
 #X connect 18 0 17 0;
 #X connect 20 0 19 0;
 #X connect 21 0 9 0;
 #X connect 22 0 2 0;
-#X connect 23 0 22 2;
-#X connect 24 0 9 0;
-#X connect 25 0 5 1;
-#X connect 26 0 4 0;
-#X connect 27 0 5 0;
-#X connect 27 1 28 0;
-#X connect 28 0 6 0;
+#X connect 23 0 9 0;
+#X connect 24 0 5 1;
+#X connect 25 0 4 0;
+#X connect 26 0 5 0;
+#X connect 26 1 27 0;
+#X connect 27 0 6 0;
+#X connect 28 0 22 2;
 #X restore 421 48 pd osc-3-fb;
-#N canvas 172 168 1208 643 osc-1 0;
+#N canvas 232 110 1208 643 osc-1 0;
 #X obj 215 236 r~ \$0-midi;
 #X obj 437 53 r \$0-vel;
 #X obj 198 470 outlet~;
@@ -213,24 +213,24 @@
 #X obj 630 126 t b b a;
 #X msg 398 181 cont \, 0 500 2;
 #X obj 541 513 j-env-velocity 69;
-#X obj 198 407 j-fm-tx-1;
-#X obj 233 281 sig~ 1;
-#X msg 522 221 new \, 0.25 1 4 \, 0.1 1000 2 \, 0.86 2000 2;
 #X obj 523 384 j-complex-env-block;
 #X obj 611 417 sel 0;
-#X msg 762 403 cont \, 0.25 69 2 \, 0.9 69 2 \, 0.25 69 2 \, 0.8 125
-4 \, 0.2 125 3 \, 0.78 125 3 \, 0.2 250 2 \, 0.75 250 4 \, 0.25 250
-4;
-#X connect 0 0 20 1;
+#X msg 522 221 new \, 0.95 1 4 \, 0.1 1000 2 \, 0.86 2000 2;
+#X msg 762 403 cont \, 0.25 125 2 \, 0.9 125 2 \, 0.25 125 2 \, 0.8
+125 4 \, 0.2 125 3 \, 0.78 125 3 \, 0.2 250 2 \, 0.75 250 4 \, 0.25
+250 4;
+#X obj 199 407 j-fm-mod;
+#X obj 233 281 sig~ 2;
+#X connect 0 0 24 1;
 #X connect 1 0 9 0;
-#X connect 3 0 20 0;
-#X connect 4 0 20 2;
+#X connect 3 0 24 0;
+#X connect 4 0 24 2;
 #X connect 5 0 10 0;
-#X connect 6 0 20 3;
-#X connect 7 0 25 0;
+#X connect 6 0 24 3;
+#X connect 7 0 23 0;
 #X connect 9 0 12 0;
 #X connect 9 1 17 0;
-#X connect 10 0 23 0;
+#X connect 10 0 20 0;
 #X connect 11 0 10 1;
 #X connect 12 0 18 0;
 #X connect 12 1 13 0;
@@ -241,18 +241,18 @@
 #X connect 17 2 19 0;
 #X connect 18 0 10 0;
 #X connect 19 0 6 1;
-#X connect 20 0 2 0;
-#X connect 21 0 4 0;
+#X connect 20 0 6 0;
+#X connect 20 1 21 0;
+#X connect 21 0 7 0;
 #X connect 22 0 5 0;
-#X connect 23 0 6 0;
-#X connect 23 1 24 0;
-#X connect 24 0 7 0;
-#X connect 25 0 10 0;
+#X connect 23 0 10 0;
+#X connect 24 0 2 0;
+#X connect 25 0 4 0;
 #X restore 398 105 pd osc-1;
 #X obj 719 31 s \$0-p3;
 #X obj 549 0 route p-1 trans p-2 p-3;
 #X obj 250 340 *~ 0.7;
-#N canvas 169 168 1120 628 osc-1 0;
+#N canvas 168 167 1120 628 osc-1 0;
 #X obj 215 236 r~ \$0-midi;
 #X obj 437 53 r \$0-vel;
 #X obj 198 470 outlet~;
@@ -282,8 +282,8 @@
 #X msg 523 221 new \, 0.9 5 2 \, 0.1 125 2 \, 0.86 250 2;
 #X obj 648 448 sel 0;
 #X obj 524 386 j-complex-env-block;
-#X msg 714 386 cont \, 0.25 125 2 \, 0.8 125 3 \, 0.1 125 3 \, 0.75
-125 3;
+#X msg 714 386 cont \, 0.25 250 2 \, 0.8 250 3 \, 0.1 500 2 \, 0.75
+500 3;
 #X connect 0 0 3 1;
 #X connect 1 0 11 0;
 #X connect 3 0 2 0;
@@ -354,8 +354,8 @@
 #X connect 11 0 3 0;
 #X connect 12 0 7 0;
 #X restore 133 59 pd duck;
-#X obj 540 159 *~ 0.1;
-#X obj 398 128 *~ 0.15;
+#X obj 398 128 *~ 0.9;
+#X obj 421 71 *~ 0.5;
 #X connect 0 0 2 0;
 #X connect 1 0 37 0;
 #X connect 2 0 19 0;
@@ -382,9 +382,8 @@
 #X connect 31 0 11 1;
 #X connect 32 0 8 0;
 #X connect 33 0 11 0;
-#X connect 34 0 35 0;
-#X connect 34 0 46 0;
-#X connect 35 0 47 0;
+#X connect 34 0 47 0;
+#X connect 35 0 46 0;
 #X connect 37 0 16 0;
 #X connect 37 1 21 0;
 #X connect 37 2 23 0;
@@ -399,6 +398,5 @@
 #X connect 43 0 4 0;
 #X connect 44 0 42 0;
 #X connect 45 0 9 0;
-#X connect 46 0 28 0;
-#X connect 46 0 39 0;
-#X connect 47 0 29 0;
+#X connect 46 0 29 0;
+#X connect 47 0 35 0;
