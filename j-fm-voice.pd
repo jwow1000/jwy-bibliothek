@@ -1,11 +1,11 @@
 #N canvas 559 278 881 521 10;
 #X obj 23 6 inlet;
 #N canvas 139 380 528 401 yo-\$0 1;
-#X obj 20 30 j-fm-presets/big-pad-2 1904 0;
-#X obj 20 0 r note-1904;
-#X obj 100 0 r mess-1904;
-#X obj 20 200 throw~ L-j-fm-presets/big-pad-2-1441;
-#X obj 140 180 throw~ R-j-fm-presets/big-pad-2-1441;
+#X obj 20 30 j-fm-presets/big-pad-2 5656 0;
+#X obj 20 0 r note-5656;
+#X obj 100 0 r mess-5656;
+#X obj 20 200 throw~ L-j-fm-presets/big-pad-2-4122;
+#X obj 140 180 throw~ R-j-fm-presets/big-pad-2-4122;
 #X connect 0 0 3 0;
 #X connect 0 1 4 0;
 #X connect 1 0 0 0;
