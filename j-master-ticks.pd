@@ -1,9 +1,9 @@
-#N canvas 44 329 658 510 10;
+#N canvas 45 330 657 509 10;
 #X msg 437 182 60000 \$1;
 #X obj 437 205 /;
 #X obj 140 18 inlet on/off;
 #X obj 453 18 inlet BPM;
-#X obj 236 363 outlet;
+#X obj 236 364 outlet;
 #X text 27 170 Arg1: Tick resolution(4-360);
 #X obj 290 18 inlet;
 #X obj 290 39 t b;
