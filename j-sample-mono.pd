@@ -1,4 +1,4 @@
-#N canvas 628 324 642 435 12;
+#N canvas 891 275 642 435 12;
 #X obj 206 316 j-sample-mono-voice WOW, f 28;
 #X obj 26 316 j-sample-mono-voice WOW;
 #X obj 323 69 inlet messages;
