@@ -19,8 +19,8 @@
 #X msg 444 162 1;
 #X obj 444 141 r \$1-loadbang;
 #X obj 444 193 switch~ 1 1 1;
-#X obj 256 190 rzero~ -1;
-#X obj 257 212 *~ 0.5;
+#X obj 351 141 rzero~ -1;
+#X obj 352 163 *~ 0.5;
 #X obj 101 185 lop~ \$2;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
