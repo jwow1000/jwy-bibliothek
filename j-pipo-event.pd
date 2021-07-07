@@ -1,4 +1,4 @@
-#N canvas 176 202 757 676 12;
+#N canvas 176 196 757 676 12;
 #X obj 28 37 inlet~ mono sig;
 #X obj 485 22 inlet bang toggle;
 #X obj 521 51 + 1;
@@ -32,10 +32,6 @@
 #X obj 273 436 j-pan \$2;
 #X obj 82 387 pack 0 \$4;
 #X obj 327 399 pack 0 \$4;
-#X obj 335 502 env~;
-#X floatatom 335 526 5 0 0 0 - - -;
-#X obj 257 497 env~;
-#X floatatom 257 521 5 0 0 0 - - -;
 #X obj 46 193 ==;
 #X connect 0 0 9 0;
 #X connect 0 0 14 0;
@@ -57,17 +53,13 @@
 #X connect 20 0 27 0;
 #X connect 24 0 18 0;
 #X connect 26 0 9 1;
-#X connect 27 0 37 0;
+#X connect 27 0 33 0;
 #X connect 27 1 28 1;
 #X connect 28 0 16 0;
 #X connect 29 0 7 0;
 #X connect 29 1 8 0;
 #X connect 30 0 7 0;
-#X connect 30 0 35 0;
 #X connect 30 1 8 0;
-#X connect 30 1 33 0;
 #X connect 31 0 29 1;
 #X connect 32 0 30 1;
-#X connect 33 0 34 0;
-#X connect 35 0 36 0;
-#X connect 37 0 28 0;
+#X connect 33 0 28 0;

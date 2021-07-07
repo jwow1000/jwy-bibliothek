@@ -1,0 +1,13 @@
+#N canvas 606 314 799 300 12;
+#X obj 21 21 inlet;
+#X text 66 22 messages to record;
+#X obj 325 27 inlet;
+#X obj 325 171 s \$0-ticks;
+#X text 371 29 messages;
+#X obj 325 51 route ticks start stop;
+#X obj 375 139 s \$0-start;
+#X obj 425 102 s \$0-stop;
+#X connect 2 0 5 0;
+#X connect 5 0 3 0;
+#X connect 5 1 6 0;
+#X connect 5 2 7 0;
