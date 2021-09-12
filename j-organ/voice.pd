@@ -1,0 +1,5 @@
+#N canvas 259 156 782 510 12;
+#X obj 73 152 clone -s 1 12 partial;
+#X obj 34 23 inlet;
+#X text 88 22 note;
+#X connect 1 0 0 0;

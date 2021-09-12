@@ -5,10 +5,10 @@
 #X obj 227 229 pow 2;
 #X obj 113 224 *~;
 #X obj 178 102 vsl 40 60 0 127 0 0 empty empty empty 0 -9 0 10 -175101
--1 -1 4900 1;
+-1 -1 0 1;
 #X obj 105 103 bng 30 250 50 0 empty empty MUTE 35 20 0 10 -262144
 -1 -1;
-#X msg 240 71 0;
+#X msg 178 56 0;
 #X obj 159 179 inlet~;
 #X obj 159 222 *~;
 #N canvas 0 23 450 300 safety 0;
@@ -27,7 +27,7 @@
 #X obj 159 280 delwrite~ \$0-hi 10;
 #X obj 115 310 delwrite~ \$0-hiL 10;
 #X obj 113 376 delread~ \$0-hiL 10;
-#X obj 148 397 delread~ \$0-hi 10;
+#X obj 158 397 delread~ \$0-hi 10;
 #X obj 363 124 print LOUD!!;
 #X text 291 64 safety feature so no blow out;
 #X obj 370 195 catch~ main-out-mono;
